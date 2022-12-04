@@ -18,8 +18,8 @@ const RightsSection = () => {
       </span>
       <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
         <ul className="flex gap-6">
-          {icons.map((i) => (
-            <SocialNetworkIcon name={i} />
+          {icons.map((i, index) => (
+            <SocialNetworkIcon name={i} key={index} />
           ))}
         </ul>
       </div>

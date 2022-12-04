@@ -6,8 +6,11 @@ import Links from "./links";
 import MenuIcon from "./menuIcon";
 import Cookies from "universal-cookie";
 import FlagsIcon from "./flagsLenguaje";
+import { useRouter } from "next/router";
 
 const NavBar: NextPage = () => {
+  // ------->   Constants  <-------
+  const { push } = useRouter();
   // -------> Local states <-------
   const [menu, setMenu] = useState(false);
   const [lenguaje, setLenguaje] = useState("ES");
@@ -16,10 +19,12 @@ const NavBar: NextPage = () => {
   const openMenu = (): void => {
     setMenu(!menu);
   };
-  const setLenguajes = () => {
+  const setLenguajes = async () => {
     setLenguaje(lenguaje == "ES" ? "EN" : "ES");
     cookie.set("Lenguaje", lenguaje, { path: "/" });
+    push("/");
   };
+  cookie.set("Lenguaje", lenguaje, { path: "/" });
   return (
     <nav className="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b-blue-500 border-b-[.5px]">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
@@ -38,7 +43,7 @@ const NavBar: NextPage = () => {
           >
             Log In
           </button>
-          <FlagsIcon lenguaje={lenguaje} setLenguajes={setLenguajes} />
+          <FlagsIcon setLenguajes={setLenguajes} />
           <MenuIcon menu={menu} openMenu={openMenu} />
         </div>
         <Links menu={menu} />

@@ -15,6 +15,7 @@ const Footer: NextPage = () => {
               src={FametalLogo}
               className="mr-3 md:absolute bottom-[10px]"
               alt="FlowBite Logo"
+              priority
             />
           </a>
         </div>
