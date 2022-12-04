@@ -29,12 +29,12 @@ export default function Links({ menu }: { menu: any }) {
       }`}
       id="navbar-sticky"
     >
-      <ul className="flex flex-col p-3 z-[-1] text-center rounded-lg md:flex-row md:space-x-10 md:text-sm md:font-blond md:border-0 bg-white">
+      <ul className="flex flex-col hover:cursor-pointer p-3 z-[-1] text-center rounded-lg md:flex-row md:space-x-10 md:text-sm md:font-blond md:border-0 bg-white">
         {links.map((l, i) => (
           <li key={i}>
             <a
               href={l.link}
-              className="hover:cursor-pointer pointer block py-2 pl-3 pr-4 text-black md:bg-transparent md:p-0"
+              className="hover:cursor-pointer text-lg pointer block py-2 pl-3 pr-4 text-black md:bg-transparent md:p-0"
               aria-current="page"
             >
               {l.name}

@@ -26,7 +26,7 @@ const NavBar: NextPage = () => {
   };
   cookie.set("Lenguaje", lenguaje, { path: "/" });
   return (
-    <nav className="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b-blue-500 border-b-[.5px]">
+    <nav className="bg-[#5261EA] px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b-blue-500 border-b-[.5px] backdrop-blur-xl">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="https://flowbite.com/" className="flex items-center">
           <Image
@@ -39,7 +39,7 @@ const NavBar: NextPage = () => {
         <div className="flex md:order-3 gap-3">
           <button
             type="button"
-            className="border border-sky-400 text-sky-400 font-normal bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg text-sm px-5 py-2.5 text-center dark:bg-transparent "
+            className="border border-white text-white font-normal bg-blue-white focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center"
           >
             Log In
           </button>

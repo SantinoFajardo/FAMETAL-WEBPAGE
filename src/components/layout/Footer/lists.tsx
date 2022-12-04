@@ -54,30 +54,30 @@ const Lists = () => {
   return (
     <div className="grid grid-cols-3 sm:text-center sm:gap-6 sm:grid-cols-3">
       <div>
-        <h2 className="mb-6 text-sm font-semibold uppercase text-black">
+        <h2 className="mb-6 text-sm font-semibold uppercase text-white">
           Resources
         </h2>
-        <ul className="text-black">
+        <ul className="text-white">
           {resources.map((r, i) => (
             <List list={r.name} key={i} />
           ))}
         </ul>
       </div>
       <div>
-        <h2 className="mb-6 text-sm font-semibold text-black uppercase">
+        <h2 className="mb-6 text-sm font-semibold text-white uppercase">
           Follow us
         </h2>
-        <ul className="text-black">
+        <ul className="text-white">
           {followUs.map((f, i) => (
             <List list={f.name} key={i} />
           ))}
         </ul>
       </div>
       <div>
-        <h2 className="mb-6 text-sm font-semibold text-black uppercase">
+        <h2 className="mb-6 text-sm font-semibold text-white uppercase">
           Contact
         </h2>
-        <ul className="text-black">
+        <ul className="text-white">
           {contact.map((c, i) => (
             <List list={c.name} key={i} />
           ))}
