@@ -1,5 +1,5 @@
-import { NextPage } from "next";
 import NavBar from "../navBar/navBar";
+import Footer from "./Footer/footer";
 
 const Layout: any = ({
   children,
@@ -10,6 +10,7 @@ const Layout: any = ({
     <>
       <NavBar />
       {children}
+      <Footer />
     </>
   );
 };
