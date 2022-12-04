@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import About from "../components/about";
+import About from "../components/about/about";
 import Layout from "../components/layout/layout";
 import Cookies from "universal-cookie";
 
