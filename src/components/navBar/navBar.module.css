@@ -1,0 +1,11 @@
+#menu:hover div:first-child {
+  transform: rotate(45deg);
+}
+
+#menu:hover div:nth-child(2) {
+  opacity: 0;
+}
+
+#menu:hover div:last-child {
+  transform: rotate(-45deg);
+}
