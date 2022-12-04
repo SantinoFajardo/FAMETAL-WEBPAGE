@@ -24,7 +24,7 @@ const links = [
 export default function Links({ menu }: { menu: any }) {
   return (
     <div
-      className={`md:flex md:items-center absolute md:pb-0 pb-12 md:static bg-transparent z-[-1] left-0 w-full h-full md:w-auto transition-all duration-500 ease-in ${
+      className={`hidden lg:flex md:items-center absolute md:pb-0 pb-12 md:static bg-transparent z-[-1] left-0 w-full h-full md:w-auto transition-all duration-500 ease-in ${
         menu ? "top-16" : "top-[-490px]"
       }`}
       id="navbar-sticky"
