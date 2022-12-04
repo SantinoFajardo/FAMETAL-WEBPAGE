@@ -1,4 +1,4 @@
-import NavBar from "../navBar/navBar";
+import NavBar from "./navBar/navBar";
 import Footer from "./Footer/footer";
 
 const Layout: any = ({

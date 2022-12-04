@@ -1,4 +1,4 @@
-import SocialNetworkIcon from "../../iconSocialNetwork/iconRedNetwork";
+import SocialNetworkIcon from "../../iconRedNetwork";
 import { BsInstagram, BsFacebook } from "react-icons/bs";
 
 const icons = [
